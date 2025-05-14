@@ -27,9 +27,9 @@ El criterio de aprobación o rechazo sobre una lección la deberás de realizar 
   - G14: Ensuring that information conveyed by color differences is also available in text
   - G205: Including a text cue for colored form control labels
   - G182: Ensuring that additional visual cues are available when text color differences are used to convey information
-  - G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on hover for links or controls where color alone is used to identify them 
+  - G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on hover for links or controls where color alone is used to identify them
   - G111: Using color and pattern
-  - G14: Ensuring that information conveyed by color differences is also available in text 
+  - G14: Ensuring that information conveyed by color differences is also available in text
 
 Ten en cuenta que la técnica que tomes debe de funcionar para la situación correcta que se te brinda dentro de la lección y como parámetro a evaluar
 
