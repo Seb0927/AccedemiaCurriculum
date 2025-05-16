@@ -53,8 +53,8 @@ Las respuestas que brindes deberás hacerlas en un formato JSON. NO DEBES DE ENV
 - Para cada instrucción se te brindará:
   - Título de la lección
   - Criterio de éxito a evaluar
-  - Pieza de código a evaluar
-  - Situación incorrecta de la pieza de código: Porqué es inaccesible
-  - Situación correcta de la pieza de código: Cuándo es accesible
-  - Pieza de código inaccesible junto a una indicación sobre donde se encuentra la violación al criterio de éxito
+  - Situación incorrecta: Porqué es inaccesible
+  - Situación correcta: Cuándo es accesible
+  - Pieza de código inaccesible indicando donde se encuentra la violación al criterio de éxito
   - Pieza de código accesible indicando una posible solución.
+  - Pieza de código a evaluar hecha por el usuario
