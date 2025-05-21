@@ -16,3 +16,5 @@
   aria-label={`Imagen ${index + 1} de ${images.length}: ${description}`}
 />
 ```
+
+Solución brindada por el estudiante:
