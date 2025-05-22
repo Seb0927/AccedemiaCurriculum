@@ -2,6 +2,7 @@
 
 > Recuerda brindar la respuesta en formato JSON
 
+- WCAG Success Criteria: "Understanding Non-text Content"
 - Título de la lección: WCAG 1.1.1: Texto alternativo de productos
 - Criterio de éxito a evaluar: 1.1.1
 - Situación incorrecta: Los productos no contienen un texto alternativo
