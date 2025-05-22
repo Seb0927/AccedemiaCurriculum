@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 2.5.4: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los usuarios puedan identificar el propósito de los controles interactivos basándose en su contexto.
+
+Esto implica que los controles deben estar acompañados de información contextual que explique su función. Por ejemplo, un botón de búsqueda debe estar etiquetado como "Buscar" y ubicado cerca de un campo de entrada de texto. Estas prácticas benefician especialmente a personas con discapacidades visuales o cognitivas, al facilitar la comprensión y uso de los controles.
 
 ## Caso
 

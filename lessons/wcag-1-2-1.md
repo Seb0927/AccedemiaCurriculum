@@ -1,10 +1,10 @@
-# WCAG 1.2.1: Entrevista del blog con transcripción
+# WCAG 1.2.1: [Nombre de la lección]
 
 ## Descripción
 
-Este criterio de éxito busca asegurar que los contenidos pregrabados que combinan audio y video incluyan alternativas como audiodescripciones para que las personas con discapacidades visuales puedan acceder a la información visual importante.
+Este criterio de éxito busca garantizar que los contenidos pregrabados que combinan audio y video sean accesibles para todas las personas mediante alternativas como audiodescripciones o transcripciones textuales.
 
-La audiodescripción consiste en una narración adicional que describe elementos visuales clave durante las pausas naturales del diálogo. Esto permite que las personas ciegas o con baja visión comprendan acciones, expresiones faciales, cambios de escena u otros aspectos visuales relevantes. Al proporcionar este tipo de apoyo, se mejora la inclusión y se garantiza que el contenido audiovisual pueda ser comprendido por una audiencia más amplia, sin depender únicamente del canal visual.
+Estas alternativas permiten que el contenido audiovisual se perciba a través de diferentes modalidades sensoriales según las necesidades del usuario. Por ejemplo, una audiodescripción puede narrar elementos visuales clave durante las pausas naturales del diálogo, mientras que una transcripción textual puede detallar tanto el diálogo como las acciones visuales importantes. Estas opciones benefician especialmente a personas con discapacidades visuales o auditivas, al ofrecer una forma paralela y accesible de entender el contenido.
 
 ## Caso
 

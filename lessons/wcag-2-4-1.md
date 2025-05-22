@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 2.4.1: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los usuarios puedan navegar por una página web de manera lógica y predecible, utilizando encabezados y etiquetas descriptivas.
+
+Esto implica que los encabezados y etiquetas deben reflejar claramente el propósito de los elementos que describen. Por ejemplo, un encabezado de sección debe indicar claramente el contenido que sigue, y una etiqueta de formulario debe describir adecuadamente el campo correspondiente. Estas prácticas benefician especialmente a personas con discapacidades visuales o cognitivas, al facilitar la navegación y comprensión del contenido.
 
 ## Caso
 

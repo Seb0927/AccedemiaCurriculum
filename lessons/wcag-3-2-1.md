@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 3.2.1: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que las páginas web mantengan un comportamiento consistente cuando los usuarios interactúan con ellas, evitando cambios inesperados de contexto.
+
+Esto implica que las acciones del usuario, como seleccionar un elemento de un menú desplegable, no deben provocar cambios automáticos de página o contexto. Por ejemplo, un formulario no debe enviarse automáticamente al seleccionar una opción. Estas prácticas benefician especialmente a personas con discapacidades cognitivas o motoras, al proporcionar una experiencia de usuario predecible y controlada.
 
 ## Caso
 

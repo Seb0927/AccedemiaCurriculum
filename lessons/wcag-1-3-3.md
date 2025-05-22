@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 1.3.3: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que la información sensorial, como el color, no sea el único medio para transmitir contenido o distinguir elementos.
+
+Esto implica que cualquier información comunicada mediante el color también debe estar disponible en texto o mediante otros indicadores visuales. Por ejemplo, si un formulario utiliza el color rojo para indicar errores, también debe incluir un mensaje textual que explique el problema. Estas prácticas benefician especialmente a personas con discapacidades visuales o daltonismo, al asegurar que puedan acceder a la información de manera efectiva.
 
 ## Caso
 

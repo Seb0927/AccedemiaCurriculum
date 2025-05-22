@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 2.1.2: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los usuarios puedan detener o desactivar cualquier funcionalidad que se active automáticamente al presionar una tecla.
+
+Esto implica que las acciones activadas por teclas específicas deben ser configurables o desactivables para evitar activaciones accidentales. Por ejemplo, si una página utiliza la tecla "Espacio" para iniciar un video, también debe permitir que los usuarios desactiven esta funcionalidad. Estas prácticas benefician especialmente a personas con discapacidades motoras o cognitivas, al evitar interacciones no deseadas y mejorar la experiencia de uso.
 
 ## Caso
 

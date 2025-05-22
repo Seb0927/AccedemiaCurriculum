@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 3.2.2: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los componentes interactivos de una página web, como menús y formularios, se comporten de manera consistente en todas las páginas.
+
+Esto implica que los elementos interactivos deben mantener su ubicación y funcionalidad en todo el sitio web. Por ejemplo, un menú de navegación debe aparecer en el mismo lugar y con las mismas opciones en todas las páginas. Estas prácticas benefician especialmente a personas con discapacidades cognitivas o visuales, al facilitar la navegación y comprensión del contenido.
 
 ## Caso
 

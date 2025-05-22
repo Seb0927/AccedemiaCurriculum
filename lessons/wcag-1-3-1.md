@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 1.3.1: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que la información y la estructura de una página web sean accesibles para todas las personas, independientemente de las tecnologías de asistencia que utilicen.
+
+Esto implica que el contenido debe estar organizado de manera lógica y semántica, utilizando etiquetas HTML adecuadas como encabezados, listas y tablas. Por ejemplo, un encabezado debe ser marcado con una etiqueta `<h1>` en lugar de simplemente usar texto en negrita. Estas prácticas benefician especialmente a personas con discapacidades visuales o cognitivas, ya que permiten que los lectores de pantalla y otras herramientas interpreten correctamente la jerarquía y el propósito del contenido.
 
 ## Caso
 

@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 1.4.2: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los usuarios puedan pausar, detener o ajustar el volumen del audio que se reproduce automáticamente en una página web.
+
+Esto implica que cualquier contenido de audio que se reproduzca automáticamente durante más de tres segundos debe incluir controles accesibles para pausarlo o detenerlo. Por ejemplo, un video con audio que se inicia automáticamente debe tener un botón claramente visible para detener la reproducción. Estas prácticas benefician especialmente a personas con discapacidades auditivas o cognitivas, al evitar distracciones o dificultades para concentrarse en otros contenidos.
 
 ## Caso
 

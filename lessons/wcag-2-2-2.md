@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 2.2.2: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los usuarios puedan pausar, detener o ocultar cualquier contenido que se mueva, parpadee o se desplace automáticamente en una página web.
+
+Esto implica que los usuarios deben tener controles accesibles para gestionar este tipo de contenido, especialmente si dura más de cinco segundos. Por ejemplo, un carrusel de imágenes debe incluir botones para pausar o detener el desplazamiento automático. Estas prácticas benefician especialmente a personas con discapacidades visuales o cognitivas, al evitar distracciones y facilitar la comprensión del contenido.
 
 ## Caso
 

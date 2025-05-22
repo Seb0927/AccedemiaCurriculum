@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 1.3.2: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que el contenido web sea presentado de manera significativa y comprensible, independientemente de la orientación o disposición visual del contenido.
+
+Esto implica que la secuencia de lectura y el significado del contenido no dependan únicamente de su presentación visual. Por ejemplo, si un formulario tiene campos organizados en columnas, el orden lógico de los campos debe mantenerse incluso si se accede al contenido mediante un lector de pantalla. Estas prácticas benefician especialmente a personas con discapacidades visuales o cognitivas, al asegurar que puedan navegar y comprender el contenido sin confusión.
 
 ## Caso
 

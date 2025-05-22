@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 2.1.1: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que toda la funcionalidad de una página web sea accesible mediante un teclado, sin requerir un dispositivo apuntador como un ratón.
+
+Esto implica que los usuarios deben poder navegar, interactuar y activar todos los elementos interactivos utilizando únicamente el teclado. Por ejemplo, un formulario debe permitir que los usuarios se desplacen entre los campos y los envíen utilizando la tecla "Tab" y "Enter". Estas prácticas benefician especialmente a personas con discapacidades motoras o visuales, al asegurar que puedan utilizar la página web sin barreras.
 
 ## Caso
 

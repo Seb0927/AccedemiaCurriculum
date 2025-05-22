@@ -1,8 +1,10 @@
-# WCAG [principio].[pauta].[criterio]: [Nombre de la lección]
+# WCAG 1.2.3: [Nombre de la lección]
 
 ## Descripción
 
-Insertar aquí una corta descripción del criterio.
+Este criterio de éxito busca garantizar que los contenidos pregrabados de solo video incluyan alternativas textuales o auditivas, como audiodescripciones, para que sean accesibles a personas con discapacidades visuales.
+
+Estas alternativas permiten que el contenido visual se perciba a través de diferentes modalidades sensoriales según las necesidades del usuario. Por ejemplo, una audiodescripción puede narrar elementos visuales clave durante las pausas naturales del diálogo, mientras que una transcripción textual puede detallar tanto el diálogo como las acciones visuales importantes. Estas opciones benefician especialmente a personas con discapacidades visuales, al ofrecer una forma paralela y accesible de entender el contenido.
 
 ## Caso
 
