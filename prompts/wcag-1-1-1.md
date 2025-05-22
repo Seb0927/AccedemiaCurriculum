@@ -1,7 +1,7 @@
 # Información
 
 - Título de la lección: WCAG 1.1.1: Texto alternativo de productos
-- Criterio de éxito a evaluar: 1.1.1
+- Criterio de éxito a evaluar: 1.1.1: Audio-only and Video-only (Prerecorded) (Level A)
 - Situación incorrecta: Los productos no contienen un texto alternativo
 - Situacion correcta: Los productos contienen un texto alternativo
 - Pieza de código inaccessible: El código no contiene el parámetro `alt` con una descripción clara
@@ -17,4 +17,4 @@
 />
 ```
 
-Solución brindada por el estudiante:
+- Solución brindada por el estudiante:

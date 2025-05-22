@@ -1,7 +1,7 @@
 # Información
 
-- Título de la lección: WCAG [S.C]: [Inserte aquí]
-- Criterio de éxito a evaluar: [Identificador] [Título del criterio]
+- Título de la lección: WCAG 1.4.1: [Inserte aquí]
+- Criterio de éxito a evaluar: 1.4.1 [Título del criterio]
 - Situación incorrecta: [Inserte aquí]
 - Situacion correcta: [Inserte aquí]
 - Pieza de código inaccessible:
