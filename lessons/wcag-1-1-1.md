@@ -8,7 +8,7 @@ Estas alternativas permiten que el contenido se perciba a través de diferentes 
 
 ## Caso
 
-La lista de productos del catálogo contienen un contenido visual cuyas imágenes no se acompañadas de un texto alternativo. . Esta omisión impide que las personas usuarias con discapacidades visuales comprendan el contenido visual, ya que los lectores de pantalla no pueden interpretar imágenes sin descripciones textuales.
+La lista de productos del catálogo contienen un contenido visual cuyas imágenes no se acompañadas de un texto alternativo. Esta omisión impide que las personas usuarias con discapacidades visuales comprendan el contenido visual, ya que los lectores de pantalla no pueden interpretar imágenes sin descripciones textuales.
 
 ## Solución
 
@@ -24,8 +24,8 @@ Para cumplir con el criterio WCAG 1.1.1, es necesario añadir un texto alternati
 
 ## Criterio de éxito
 
-Todo contenido no textual que se presenta al usuario tiene una alternativa en texto que cumple el mismo propósito, excepto en las situaciones que se enumeran a continuación.
+Cualquier contenido "no textual" que sea relevante para comprender la información, debe incluir una descripción de texto alternativo (visible o no) para identificar el contenido.
 
 ## Mas información
 
-- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+[Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)

@@ -1,4 +1,4 @@
-# WCAG 2.5.3: [Nombre de la lección]
+# WCAG 2.5.3: Añadir producto descriptivow
 
 ## Descripción
 

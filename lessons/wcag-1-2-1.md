@@ -1,4 +1,4 @@
-# WCAG 1.2.1: [Nombre de la lección]
+# WCAG 1.2.1: Entrevista del blog con transcripción
 
 ## Descripción
 
@@ -8,16 +8,29 @@ Estas alternativas permiten que el contenido audiovisual se perciba a través de
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+El contenido audivisual se encuentra recientemente añadido al sitio web por lo que no cuenta aún con subtítulos, pero se encuentra presente dentro del código una transcripción del mismo el cual no se encuentra dentro del sitio. La omisión de esta transcripción impide que las personas usuarias con discapacidades auditivas no logren comprender este contenido ya que no pueden acceder a un contenido equivalente a lo escuchado.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Añadir la respectiva transcripción de la entrevista
+
+```javascript
+{/* Transcripción de la entrevista */}
+<h4 className='text-2xl font-semibold mb-4'>Transcripción</h4>
+{transcriptParagraphs.map((paragraph, index) => (
+  <p key={index} className='text-base mb-4'>
+    {paragraph}
+  </p>
+))}
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Se debe proporcionar una de las siguientes alternativas para el contenido presentado:
+
+- Sólo audio: proporcione transcripción de texto descriptivo
+- Sólo video: proporcione una transcripción de texto descriptivo y / o una pista descriptiva de audio que se pueda habilitar
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 1.2.1: Audio-only and Video-only (Prerecorded) (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded)

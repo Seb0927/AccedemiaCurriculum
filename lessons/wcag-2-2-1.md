@@ -1,4 +1,4 @@
-# WCAG 2.2.1: [Nombre de la lección]
+# WCAG 2.2.1: Contador para pago
 
 ## Descripción
 
@@ -8,16 +8,37 @@ Esto implica que los usuarios deben poder extender, ajustar o desactivar los lí
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Al realizar un pago, este es medido por un temporizador de tres minutos que te obliga a realizarlo antes de que este acabe, de lo contrario el usuario es redireccionado a la ventana de Catálogo, debiendo de realizar el proceso de pago nuevamente.
+
+Esta limitación de tiempo afecta negativamente a usuarios con discapacidades motoras o cognitivas que pueden necesitar más tiempo para ingresar información de pago o tomar decisiones. Además, no se proporciona ninguna opción para extender el tiempo o pausar el contador, lo que genera frustración y posibles abandonos durante el proceso de compra.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Es posible añadir un botón que permita extender la duración del contador por 30 minutos
+
+```javascript
+// Add 30 minutes to timer (up to max 3 hours)
+const extendTime = () => {
+  setTimeLeft(prevTime => {
+    const newTime = prevTime + extensionTime
+    return newTime <= maxTime ? newTime : maxTime
+  })
+}
+
+[...]
+
+<button
+  onClick={extendTime}
+  className="px-4 py-2 bg-blue-dark text-white rounded hover:bg-blue-darkest transition-colors"
+  disabled={timeLeft + extensionTime > maxTime}>
+  Añadir 30 minutos
+</button>
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Si se define una función que requiere tiempo para ejecutarse y no es imprescindible (obligatorio desde un punto de vista legal), también se debe incluir una opción para apagarla o una opción para expandirla.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Timing Adjustable (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable)

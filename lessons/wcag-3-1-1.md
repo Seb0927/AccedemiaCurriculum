@@ -1,4 +1,4 @@
-# WCAG 3.1.1: [Nombre de la lección]
+# WCAG 3.1.1: Declarar el idioma de la pantalla
 
 ## Descripción
 
@@ -8,16 +8,28 @@ Esto implica que el atributo de idioma debe estar configurado en el código de l
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+El sitio web de CompraFácil no declara el idioma del sitio usando el atributo `lang` en el elemento `<html>`. Esta omisión causa problemas significativos para los usuarios que utilizan lectores de pantalla, ya que estas herramientas necesitan conocer el idioma del contenido para aplicar las reglas de pronunciación adecuadas.
+
+Sin esta información, el lector de pantalla puede intentar leer el contenido en español utilizando reglas fonéticas de otro idioma (generalmente inglés por defecto), resultando en una pronunciación incorrecta que dificulta o imposibilita la comprensión del contenido. También afecta a las herramientas de traducción automática y a las funciones de búsqueda específicas del idioma, creando barreras adicionales para usuarios internacionales o aquellos que dependen de estas tecnologías.
+
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Es necesario añadir el atributo `language` de la etiqueta `<html>` junto con el lenguaje del sitio web CompraFácil (En este caso, español (`es`)).
+
+```javascript
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+// [...]
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Declarar correctamente el idioma de la pantalla hace que los lectores de pantalla usen una entonación correcta para citar el contenido. Declararlos siempre.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 3.1.1: Language of Page (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page)

@@ -1,4 +1,4 @@
-# WCAG 2.3.1: [Nombre de la lección]
+# WCAG 2.3.1: Título parpadeante
 
 ## Descripción
 
@@ -8,16 +8,24 @@ Esto implica que cualquier contenido que parpadee no debe superar los tres deste
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Dentro de la sección del blog, al terminar las publicaciones disponibles, el usuario se encontrará con un anuncio que invita a aprovechar las promociones de verano que se encuentran en CompraFácil. Este anuncio está acompañado de un parpadeo rápido y constante que supera el umbral seguro de tres destellos por segundo.
+
+Esta implementación representa un grave riesgo para usuarios con epilepsia fotosensible, ya que la exposición a dicho parpadeo puede desencadenar convulsiones. Además, incluso para usuarios sin esta condición, el parpadeo excesivo puede causar molestias visuales, distracciones y dificultar la concentración en el resto del contenido de la página.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Es posible aumentar el intervalo entre parpadeos de 0.3 segundos a 0.5 segundos:
+
+```javascript
+animation: {
+  blink: 'blink 0.30s infinite',
+},
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Ningún contenido de la página debe parpadear más de 3 veces por segundo, a menos que los flashes tengan poco contraste o poco rojo (consulte los criterios completos).
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Three Flashes or Below Threshold (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold)

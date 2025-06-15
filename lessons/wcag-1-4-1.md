@@ -1,4 +1,4 @@
-# WCAG 1.4.1: [Nombre de la lección]
+# WCAG 1.4.1: Indicación de error
 
 ## Descripción
 
@@ -8,16 +8,26 @@ Esto implica que cualquier información comunicada mediante el color también de
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Al momento de crear una cuenta, los mensajes de error presentados dentro del formulario se encuentran con un color de fuente rojo. Los mensajes de error en este caso utilizan solamente el color como única forma de transmitir el contenido, pero si un usuario con daltonismo se encuentra frente a estos mensajes no entenderá que tipo de mensaje es (¿Error, informativo, alerta...?), impidiendo así que usuarios con deficiencias visuales tales como daltonismo logren entender por completo el contenido.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Brindar de mas elementos decorativos al mensaje de error que permitan al usuario entender mucho mejor el contenido. En este caso es posible añadir un contorno y fondo rojo junto con texto en negrilla:
+
+```javascript
+<p
+  ref={errorRef}
+  tabIndex={-1}
+  role="alert"
+  className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-red-500 font-bold'>
+  {error}
+</p>
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Los colores no deben usarse como la única forma de transmitir contenido o distinguir elementos visuales.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 1.4.1: Use of Color (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color)

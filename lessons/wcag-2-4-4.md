@@ -1,4 +1,4 @@
-# WCAG 2.4.4: [Nombre de la lección]
+# WCAG 2.4.4: "Leer mas" sobre noticias
 
 ## Descripción
 
@@ -8,16 +8,27 @@ Esto implica que los textos de los enlaces deben ser claros y específicos, evit
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Al encontrarse dentro de la sección de Blog donde se pueden encontrar los posts publicados, cada una de las pre-visualizaciones de las publicaciones solamente contienen un hipervínculo con la leyenda "Leer más". Esta práctica genera problemas significativos para usuarios que utilizan tecnologías de asistencia, ya que cuando un lector de pantalla enumera todos los enlaces de la página, se encuentran con múltiples enlaces que dicen simplemente "Leer más" sin contexto adicional.
+
+Esto hace imposible distinguir entre las diferentes publicaciones sin tener que navegar al contenido circundante, resultando en una experiencia frustrante e ineficiente para comprender el propósito específico de cada enlace.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Cada pre-visualización a las publicaciones del blog debe de contener una entrada al contenido textual de la publicación acompañado del respectivo hipervínculo con la leyenda "Leer más".
+
+```javascript
+<h2 className='text-2xl font-bold mb-2'>{title}</h2>
+<p className='text-lg mb-4'>{getSubstring(content, 150)}</p>
+<a
+  title={'Leer más sobre ' + title}
+  href={'/blog/post' + (id + 1)}
+  className='flex items-center justify-center h-9 w-28 bg-blue-dark text-white text-xl mt-3 hover:bg-blue-darkest'>Leer más</a>
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+El propósito de un enlace debe determinarse a partir del texto del propio enlace o del contexto que lo rodea.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 2.4.4: Link Purpose (In Context) (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context)

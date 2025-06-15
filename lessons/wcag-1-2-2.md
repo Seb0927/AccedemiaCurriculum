@@ -1,4 +1,4 @@
-# WCAG 1.2.2: [Nombre de la lección]
+# WCAG 1.2.2: Anuncio con subtítulos
 
 ## Descripción
 
@@ -8,16 +8,28 @@ Estas alternativas permiten que el contenido se perciba a través de diferentes 
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+> El archivo con subtítulos se encuentra disponible dentro del código (Archivo con formato `.vtt`)
+
+El anuncio de contenido audivisual se encuentra disponible dentro del sitio web pero este no cuenta con subtítulos. La omisión de este elemento impide que las personas usuarias con discapacidades auditivas no logren comprender este contenido ya que no pueden acceder a un contenido equivalente a lo escuchado.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Añadir el respectivo archivo de subtítulos dentro del elemento `<video>`
+
+```javascript
+<track
+  src={subtitlesUrl}
+  kind="subtitles"
+  srcLang="es"
+  label="Español"
+  default
+/>
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Cualquier contenido pregrabado que contenga una pista de audio (ya sea sólo de audio o video) debe tener subtítulos.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 1.2.2: Captions (Prerecorded) (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded)

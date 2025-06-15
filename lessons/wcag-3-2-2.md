@@ -1,4 +1,4 @@
-# WCAG 3.2.2: [Nombre de la lección]
+# WCAG 3.2.2: Activación automática de inicio de sesión
 
 ## Descripción
 
@@ -8,16 +8,114 @@ Esto implica que los elementos interactivos deben mantener su ubicación y funci
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Para entregar el formulario de inicio de sesión, el usuario debe de introducir sus credenciales. Una vez introducida la contraseña, dada una espera de 5 segundos el formulario será entregado de manera automática. Esta implementación causa problemas significativos para diversos usuarios, especialmente aquellos con discapacidades cognitivas o motoras que pueden necesitar más tiempo para verificar sus datos antes de enviarlos.
+
+Al no requerir una acción explícita como hacer clic en un botón de "Iniciar sesión", el usuario pierde el control sobre cuándo enviar sus datos, y puede confundirse al ser redirigido inesperadamente, o peor aún, enviar credenciales incorrectas sin poder corregirlas a tiempo.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Es necesario que el formulario para iniciar sesión traiga consigo un botón para entregar el formulario por medio del elemento `<form>`, además de remover la funcionalidad de entrega automático dados cinco segundos.
+
+```javascript
+import { useContext, useState, useRef } from 'react'
+import { UserContext } from '@/contexts/UserContext'
+
+const Login = () => {
+  const { users, setUser } = useContext(UserContext);
+  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  
+  const errorRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (!email || !password) {
+      setError('Por favor, complete todos los campos');
+      return;
+    }
+    
+    const foundUser = users.find(u => u.email === email && u.password === password);
+    
+    if (foundUser) {
+      setUser(foundUser)
+      window.location.href = '/';
+    } else {
+      setError('Credenciales incorrectas. Para facilitar pruebas, use john@comprafacil.com y comprafacil1234');
+      errorRef.current.focus();
+    }
+  };
+
+  return (
+    <div className='flex justify-center w-full'>
+      <section className='h-auto w-full md:w-4/5 lg:w-8/12 py-8 px-8 bg-blue-medium-light'>
+        <form onSubmit={handleSubmit} className='flex flex-col space-y-4'>
+          <h1 className='text-4xl font-bold'>Iniciar sesión</h1>
+          <p className='text-lg'>Ingresa tus credenciales para CompraFácil:</p>
+          
+          {error && (
+            <p 
+              ref={errorRef}
+              tabIndex={-1}
+              role="alert"
+              className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-red-500'
+            >
+              {error}
+            </p>
+          )}
+
+          <div className='flex flex-col space-y-1'>
+            <label htmlFor='email' className='block'>
+              Correo electrónico
+            </label>
+            <input 
+              id='email' 
+              type='email' 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className='w-full h-9 bg-blue-dark px-1 text-white' 
+              aria-required="true"
+            />
+          </div>
+
+          <div className='flex flex-col space-y-1'>
+            <label htmlFor='password' className='block'>
+              Contraseña
+            </label>
+            <input 
+              id='password' 
+              type='password' 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className='w-full h-9 bg-blue-dark px-1 text-white' 
+              aria-required="true"
+            />
+            <p className='text-sm italic'>La contraseña es aquella que usted utilizó en el registro</p>
+          </div>
+
+          <div className='flex flex-col space-y-2 items-center'>
+            <button 
+              type="submit"
+              className='h-9 w-32 bg-blue-dark text-white text-lg hover:bg-blue-darkest'>
+              Iniciar sesión
+            </button>
+            <a href='/register' className='underline hover:text-blue-darkest'>¿No tienes cuenta? Regístrate</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  )
+}
+
+export default Login
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+No deben ocurrir cambios contextuales que puedan desorientar a alguien cuando hay una interacción en un campo de entrada de datos (ejemplo: elementos de formulario), sin confirmación directa (ejemplo: un botón de confirmación).
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 3.2.2: On Input (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/on-input)

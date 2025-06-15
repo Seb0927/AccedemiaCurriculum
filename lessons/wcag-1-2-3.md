@@ -1,4 +1,4 @@
-# WCAG 1.2.3: [Nombre de la lección]
+# WCAG 1.2.3: Video de presentación con audio descriptivo
 
 ## Descripción
 
@@ -8,16 +8,27 @@ Estas alternativas permiten que el contenido visual se perciba a través de dife
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+> El archivo con audiodescripción se encuentra disponible dentro del código (Archivo con formato `.vtt`)
+
+El contenido audivisual de presentación de la empresa de CompraFácil no cuenta con un audio descriptivo que narre el contenido presentado dentro del mismo. La omisión de este elemento impide que las personas usuarias con discapacidad visual no puedan entender el contenido visual del mismo.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Añadir el respectivo archivo de audiodescripción dentro del elemento `<video>`
+
+```javascript
+<track
+  src={audioDescriptionUrl}
+  kind="descriptions"
+  srcLang="es"
+  label="Descripción de audio"
+/>
+```
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+Se debe proporcionar una audiodescripción o una transcripción textual descriptiva para todo el contenido de video pregrabado.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 1.2.3: Audio Description or Media Alternative (Prerecorded) (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded)

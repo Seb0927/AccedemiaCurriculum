@@ -1,4 +1,4 @@
-# WCAG 2.4.3: [Nombre de la lección]
+# WCAG 2.4.3: Tabulación del formulario de dirección
 
 ## Descripción
 
@@ -8,16 +8,18 @@ Esto implica que el orden en el que los elementos interactivos reciben el enfoqu
 
 ## Caso
 
-Insertar aquí la violación a la respectiva pauta que presenta la plataforma web inaccesible.
+Dentro del formulario para agregar una dirección, la tabulación del contenido no funciona en el orden esperado ya que el enfoque empieza desde el formulario y continua por el segundo elemento `<input>` en el orden linear de la vista. Esta alteración en la secuencia de navegación confunde a los usuarios que dependen de la navegación por teclado, especialmente aquellos que utilizan lectores de pantalla o tienen limitaciones motoras. 
+
+Al no seguir el orden visual lógico, los usuarios pueden perderse en el formulario, omitir campos importantes o experimentar frustración al no poder predecir hacia dónde se dirigirá el enfoque siguiente, comprometiendo así la usabilidad y accesibilidad del proceso de registro de direcciones.
 
 ## Solución
 
-Insertar aquí la solución a la respectiva violación de la pauta que presenta la plataforma web inaccesible.
+Se deben remover los parámetros `tabIndex` a los elementos `input` del formulario para que el orden de la tabulación sea al que le corresponde: Barrio, dirección, receptor del pedido y botón para enviar el formulario.
 
 ## Criterio de éxito
 
-Insertar aquí el respectivo criterio de éxito. Se debe de tomar de la [documentación oficial](https://www.w3.org/WAI/) por *World Wide Web (W3C)*.
+La interacción de los elementos enfocables en la pantalla debe ser siempre secuencial y lógica según el contenido presentado.
 
 ## Mas información
 
-Insertar enlace a la respectiva documentación de la pauta
+[Understanding SC 2.4.3: Focus Order (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order)
