@@ -66,4 +66,4 @@ Se debe proporcionar una forma sencilla de pausar, silenciar o ajustar el volume
 
 ## Mas información
 
-[https://www.w3.org/WAI/WCAG22/Understanding/audio-control](https://www.w3.org/WAI/WCAG22/Understanding/audio-control)
+[Understanding SC 1.4.2: Audio Control (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-control)
