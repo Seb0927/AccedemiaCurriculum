@@ -8,7 +8,7 @@ Esto implica que los atajos de teclado de una sola tecla no deben interferir con
 
 ## Caso
 
-Dentro del catálogo existe un atajo de teclado que permite redireccionar al carrito de compras al presionar la tecla "C". Este atajo se activa en cualquier momento mientras se navega por el sitio, sin importar dónde esté el foco y sin opción para desactivarlo o reconfigurarlo. 
+Dentro del catálogo existe un atajo de teclado que permite redireccionar al carrito de compras al presionar la tecla "C". Este atajo se activa en cualquier momento mientras se navega por el sitio, sin importar dónde esté el foco y sin opción para desactivarlo o reconfigurarlo.
 
 Esta implementación causa problemas a usuarios que utilizan tecnologías de asistencia como lectores de pantalla o software de reconocimiento de voz, ya que pueden activar accidentalmente el atajo mientras intentan escribir o navegar, interrumpiendo inesperadamente su experiencia y causando confusión.
 

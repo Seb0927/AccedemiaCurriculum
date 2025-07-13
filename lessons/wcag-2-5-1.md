@@ -8,7 +8,7 @@ Esto implica que las acciones importantes, como deslizar o tocar, deben ser posi
 
 ## Caso
 
-Al visualizar cada uno de los productos disponibles en el catálogo de CompraFácil, es posible observar que estos vienen acompañados con un carrusel de imágenes que permiten al cliente visualizar las imágenes de un producto si este contiene mas de una imágen, siendo la única manera de desplazar la colección de imágenes arrastrando el puntero para acceder a la siguiente imágen. 
+Al visualizar cada uno de los productos disponibles en el catálogo de CompraFácil, es posible observar que estos vienen acompañados con un carrusel de imágenes que permiten al cliente visualizar las imágenes de un producto si este contiene mas de una imágen, siendo la única manera de desplazar la colección de imágenes arrastrando el puntero para acceder a la siguiente imágen.
 
 Esta implementación presenta serias dificultades para usuarios con limitaciones motoras que no pueden realizar gestos precisos de arrastre, así como para quienes utilizan tecnologías de asistencia como punteros de cabeza o control por teclado. Al no ofrecer alternativas como botones de navegación (anterior/siguiente) que puedan activarse con un solo clic o pulsación, estos usuarios quedan efectivamente excluidos de poder ver todas las imágenes de los productos, limitando su capacidad para tomar decisiones informadas de compra.
 

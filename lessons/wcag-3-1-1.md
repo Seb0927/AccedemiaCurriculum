@@ -12,7 +12,6 @@ El sitio web de CompraFácil no declara el idioma del sitio usando el atributo `
 
 Sin esta información, el lector de pantalla puede intentar leer el contenido en español utilizando reglas fonéticas de otro idioma (generalmente inglés por defecto), resultando en una pronunciación incorrecta que dificulta o imposibilita la comprensión del contenido. También afecta a las herramientas de traducción automática y a las funciones de búsqueda específicas del idioma, creando barreras adicionales para usuarios internacionales o aquellos que dependen de estas tecnologías.
 
-
 ## Solución
 
 Es necesario añadir el atributo `language` de la etiqueta `<html>` junto con el lenguaje del sitio web CompraFácil (En este caso, español (`es`)).

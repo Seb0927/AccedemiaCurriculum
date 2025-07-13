@@ -8,7 +8,7 @@ Esto implica que el orden en el que los elementos interactivos reciben el enfoqu
 
 ## Caso
 
-Dentro del formulario para agregar una dirección, la tabulación del contenido no funciona en el orden esperado ya que el enfoque empieza desde el formulario y continua por el segundo elemento `<input>` en el orden linear de la vista. Esta alteración en la secuencia de navegación confunde a los usuarios que dependen de la navegación por teclado, especialmente aquellos que utilizan lectores de pantalla o tienen limitaciones motoras. 
+Dentro del formulario para agregar una dirección, la tabulación del contenido no funciona en el orden esperado ya que el enfoque empieza desde el formulario y continua por el segundo elemento `<input>` en el orden linear de la vista. Esta alteración en la secuencia de navegación confunde a los usuarios que dependen de la navegación por teclado, especialmente aquellos que utilizan lectores de pantalla o tienen limitaciones motoras.
 
 Al no seguir el orden visual lógico, los usuarios pueden perderse en el formulario, omitir campos importantes o experimentar frustración al no poder predecir hacia dónde se dirigirá el enfoque siguiente, comprometiendo así la usabilidad y accesibilidad del proceso de registro de direcciones.
 
