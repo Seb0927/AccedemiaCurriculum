@@ -1,14 +1,16 @@
 # Información
 
-- Título de la lección: WCAG 2.4.2: [Inserte aquí]
-- Criterio de éxito a evaluar: 2.4.2 [Título del criterio]
-- Situación incorrecta: [Inserte aquí]
-- Situacion correcta: [Inserte aquí]
+- Título de la lección: 2.4.2: Página de titulo dinámico
+- Criterio de éxito a evaluar: WCAG 2.4.2: Page Titled (Level A)
+- Situación incorrecta: Todas las pantallas presentan el título: "Comprafácil".
+- Situacion correcta: Cada pantalla presenta como título el nombre de la sección en la que el usuario se encuentra.
 - Pieza de código inaccessible:
 
 ```javascript
-// Pieza de código inaccesible
+// Set the document title to "CompraFácil" for all pages
+useEffect(() => {
+  document.title = "CompraFácil";
+}, []);
 ```
 
 - Solución brindada por el estudiante:
-
