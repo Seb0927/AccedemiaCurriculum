@@ -1,0 +1,254 @@
+{
+  "1": {
+    "name": "Perceivable",
+    "description": "Information and user interface components must be presentable to users in ways they can perceive.",
+    "guidelines": {
+      "1": {
+        "name": "Text Alternatives",
+        "description": "Provide text alternatives for any non-text content.",
+        "criteria": {
+          "1": {
+            "name": "Non-text Content",
+            "level": "A",
+            "description": "All non-text content has a text alternative that serves the equivalent purpose."
+          }
+        }
+      },
+      "2": {
+        "name": "Time-based Media",
+        "description": "Provide alternatives for time-based media.",
+        "criteria": {
+          "1": {
+            "name": "Audio-only and Video-only (Prerecorded)",
+            "level": "A",
+            "description": "Alternatives are provided for time-based media."
+          },
+          "2": {
+            "name": "Captions (Prerecorded)",
+            "level": "A",
+            "description": "Captions are provided for all prerecorded audio content in synchronized media."
+          },
+          "3": {
+            "name": "Audio Description or Media Alternative (Prerecorded)",
+            "level": "A",
+            "description": "An alternative for time-based media or audio description is provided for prerecorded video content."
+          }
+        }
+      },
+      "3": {
+        "name": "Adaptable",
+        "description": "Create content that can be presented in different ways without losing information or structure.",
+        "criteria": {
+          "1": {
+            "name": "Info and Relationships",
+            "level": "A",
+            "description": "Information, structure, and relationships conveyed through presentation can be programmatically determined."
+          },
+          "2": {
+            "name": "Meaningful Sequence",
+            "level": "A",
+            "description": "When the sequence of content affects its meaning, a correct reading sequence can be programmatically determined."
+          },
+          "3": {
+            "name": "Sensory Characteristics",
+            "level": "A",
+            "description": "Instructions provided do not rely solely on sensory characteristics of components."
+          }
+        }
+      },
+      "4": {
+        "name": "Distinguishable",
+        "description": "Make it easier for users to see and hear content including separating foreground from background.",
+        "criteria": {
+          "1": {
+            "name": "Use of Color",
+            "level": "A",
+            "description": "Color is not used as the only visual means of conveying information."
+          },
+          "2": {
+            "name": "Audio Control",
+            "level": "A",
+            "description": "If any audio plays automatically for more than 3 seconds, a mechanism is available to pause or stop it."
+          }
+        }
+      }
+    }
+  },
+  "2": {
+    "name": "Operable",
+    "description": "User interface components and navigation must be operable.",
+    "guidelines": {
+      "1": {
+        "name": "Keyboard Accessible",
+        "description": "Make all functionality available from a keyboard.",
+        "criteria": {
+          "1": {
+            "name": "Keyboard",
+            "level": "A",
+            "description": "All functionality is available from a keyboard."
+          },
+          "2": {
+            "name": "No Keyboard Trap",
+            "level": "A",
+            "description": "Keyboard focus can be moved away from a component using only a keyboard."
+          },
+          "4": {
+            "name": "Character Key Shortcuts",
+            "level": "A",
+            "description": "If a keyboard shortcut uses only letter, punctuation, number, or symbol characters, then the shortcut can be turned off, remapped, or is only active when the component is focused."
+          }
+        }
+      },
+      "2": {
+        "name": "Enough Time",
+        "description": "Provide users enough time to read and use content.",
+        "criteria": {
+          "1": {
+            "name": "Timing Adjustable",
+            "level": "A",
+            "description": "Users are given adequate time to interact with web content."
+          },
+          "2": {
+            "name": "Pause, Stop, Hide",
+            "level": "A",
+            "description": "Users can pause, stop, or hide content that starts automatically and lasts more than 5 seconds."
+          }
+        }
+      },
+      "3": {
+        "name": "Seizures and Physical Reactions",
+        "description": "Do not design content in a way that is known to cause seizures or physical reactions.",
+        "criteria": {
+          "1": {
+            "name": "Three Flashes or Below Threshold",
+            "level": "A",
+            "description": "Web pages do not contain anything that flashes more than three times in any one second period."
+          }
+        }
+      },
+      "4": {
+        "name": "Navigable",
+        "description": "Provide ways to help users navigate, find content, and determine where they are.",
+        "criteria": {
+          "1": {
+            "name": "Bypass Blocks",
+            "level": "A",
+            "description": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages."
+          },
+          "2": {
+            "name": "Page Titled",
+            "level": "A",
+            "description": "Web pages have titles that describe topic or purpose."
+          },
+          "3": {
+            "name": "Focus Order",
+            "level": "A",
+            "description": "Components receive focus in an order that preserves meaning and operability."
+          },
+          "4": {
+            "name": "Link Purpose (In Context)",
+            "level": "A",
+            "description": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context."
+          }
+        }
+      },
+      "5": {
+        "name": "Input Modalities",
+        "description": "Make it easier for users to operate functionality through various inputs beyond keyboard.",
+        "criteria": {
+          "1": {
+            "name": "Pointer Gestures",
+            "level": "A",
+            "description": "All functionality that uses multipoint or path-based gestures can be operated with a single pointer."
+          },
+          "2": {
+            "name": "Pointer Cancellation",
+            "level": "A",
+            "description": "Functions that can be operated using a single pointer are completed when the user releases the pointer."
+          },
+          "3": {
+            "name": "Label in Name",
+            "level": "A",
+            "description": "For user interface components with labels that include text or images of text, the name contains the text that is presented visually."
+          },
+          "4": {
+            "name": "Motion Actuation",
+            "level": "A",
+            "description": "Functionality that can be operated by device motion or user motion can also be operated by user interface components."
+          }
+        }
+      }
+    }
+  },
+  "3": {
+    "name": "Understandable",
+    "description": "Information and the operation of the user interface must be understandable.",
+    "guidelines": {
+      "1": {
+        "name": "Readable",
+        "description": "Make text content readable and understandable.",
+        "criteria": {
+          "1": {
+            "name": "Language of Page",
+            "level": "A",
+            "description": "The default human language of each page can be programmatically determined."
+          }
+        }
+      },
+      "2": {
+        "name": "Predictable",
+        "description": "Make Web pages appear and operate in predictable ways.",
+        "criteria": {
+          "1": {
+            "name": "On Focus",
+            "level": "A",
+            "description": "When any user interface component receives focus, it does not initiate a change of context."
+          },
+          "2": {
+            "name": "On Input",
+            "level": "A",
+            "description": "Changing the setting of any user interface component does not automatically cause a change of context."
+          }
+        }
+      },
+      "3": {
+        "name": "Input Assistance",
+        "description": "Help users avoid and correct mistakes.",
+        "criteria": {
+          "1": {
+            "name": "Error Identification",
+            "level": "A",
+            "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text."
+          },
+          "2": {
+            "name": "Labels or Instructions",
+            "level": "A",
+            "description": "Labels or instructions are provided when content requires user input."
+          }
+        }
+      }
+    }
+  },
+  "4": {
+    "name": "Robust",
+    "description": "Content must be robust enough to be interpreted by a wide variety of user agents, including assistive technologies.",
+    "guidelines": {
+      "1": {
+        "name": "Compatible",
+        "description": "Maximize compatibility with current and future user agents, including assistive technologies.",
+        "criteria": {
+          "1": {
+            "name": "Parsing",
+            "level": "A",
+            "description": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, and IDs are unique."
+          },
+          "2": {
+            "name": "Name, Role, Value",
+            "level": "A",
+            "description": "For all user interface components, the name and role can be programmatically determined; states, properties, and values can be programmatically set."
+          }
+        }
+      }
+    }
+  }
+}
